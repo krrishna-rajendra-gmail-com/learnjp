@@ -1,0 +1,19 @@
+<div ng-class='TargetDetail.EmployeeSize<=50 ? "panel panel-warning" : "panel panel-primary"'>
+        <div class="panel-heading">
+                <h4>{{TargetDetail.TargetName}} - {{TargetDetail.Country}}</h4>
+        </div>
+        <div class="panel-body">
+                <div class="row">
+                         <div class="col-sm-4"><strong> Sector :<strong></div> 
+                         <div class="col-sm-7">{{TargetDetail.Sector}}</div>
+                </div>
+                 <div class="row">
+                         <div class="col-sm-4"><strong> Name :<strong></div>
+                         <div class="col-sm-7">{{TargetDetail.TargetName}}</div>
+                </div>
+                 <div class="row">
+                         <div class="col-sm-4"><strong>Revenue :<strong></div>
+                         <div class="col-sm-7">{{TargetDetail.Revenue}} bn</div>
+                </div>
+        </div>
+</div>

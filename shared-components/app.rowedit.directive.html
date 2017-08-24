@@ -1,0 +1,28 @@
+    <h3>Target Details Count ({{vm.targetDetailsAll.length}})</h3>
+    <br />
+    <div ng-repeat="targetDetail in vm.targetDetailsAll" class="col-md-4" >
+        <div ng-class='targetDetail.EmployeeSize<=50 ? "panel panel-warning" : "panel panel-primary"'>
+                <div class="panel-heading">
+                        <h4>{{targetDetail.TargetName}} - {{targetDetail.Country}} - {{targetDetail.EmployeeSize}} 
+                                <a herf="#" ng-click="vm.deleteItem(targetDetail.ID)" ng-class='targetDetail.EmployeeSize<=50 ? "pull-right fontcolorblue" : "pull-right fontcolorred"'>
+                                        <i class="glyphicon glyphicon-remove"></i></a> &nbsp; &nbsp;
+                                <a herf="#" ng-click="vm.viewItem(targetDetail)" ng-class='targetDetail.EmployeeSize<=50 ? "pull-right fontcolorblue" : "pull-right fontcolorred"'>
+                                        <i class="glyphicon glyphicon-search"></i></a>
+                        </h4> 
+                </div>
+                <div class="panel-body">
+                        <div class="row">
+                                <div class="col-sm-4"><strong> Sector :<strong></div> 
+                                <div class="col-sm-7">{{targetDetail.Sector}}</div>
+                        </div>
+                        <div class="row">
+                                <div class="col-sm-4"><strong> Name :<strong></div>
+                                <div class="col-sm-7">{{targetDetail.TargetName}}</div>
+                        </div>
+                        <div class="row">
+                                <div class="col-sm-4"><strong>Revenue :<strong></div>
+                                <div class="col-sm-7">{{targetDetail.Revenue}} bn</div>
+                        </div>
+                </div>
+        </div>
+</div>

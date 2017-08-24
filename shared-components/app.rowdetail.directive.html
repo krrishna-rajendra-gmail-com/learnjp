@@ -1,0 +1,21 @@
+   <td>
+        <a herf="#" ng-attr-title="Delete Item with ID: {{vm.targetDetail.ID}}" ng-click="vm.deleteItem(vm.targetDetail.ID)">
+            <i class="glyphicon glyphicon-trash fontcolorred"></i>
+        </a>&nbsp;
+        <a herf="#" ng-if="!vm.showEdit"  ng-click="vm.editItem()">
+            <i ng-attr-title="Edit Item with ID: {{vm.targetDetail.ID}}" class="glyphicon glyphicon-edit fontcolorblue"></i>
+        </a>&nbsp;
+        <a herf="#" ng-attr-title="Save Changes for Item with ID: {{vm.targetDetail.ID}}" ng-if="vm.showEdit" ng-click="vm.saveItem(vm.targetDetail)">
+            <i class="glyphicon glyphicon-save fontcolorgreen"></i>
+        </a>
+    </td>
+   <td>{{vm.targetDetail.ID}}</div> </td> 
+   <td><input ng-if="vm.showEdit" ng-model="vm.targetDetail.TargetName"/><span ng-if="!vm.showEdit">{{vm.targetDetail.TargetName}} <span></td>
+   <td><input ng-if="vm.showEdit" ng-model="vm.targetDetail.Revenue"/><span ng-if="!vm.showEdit">{{vm.targetDetail.Revenue}} <span></td>
+   <td><input ng-if="vm.showEdit" ng-model="vm.targetDetail.Email"/><span ng-if="!vm.showEdit">{{vm.targetDetail.Email}}</div></td>
+   <td><input ng-if="vm.showEdit" ng-model="vm.targetDetail.Address"/><span ng-if="!vm.showEdit">{{vm.targetDetail.Address}}</div></td>
+   <td><input ng-if="vm.showEdit" ng-model="vm.targetDetail.EmployeeSize"/><span ng-if="!vm.showEdit">{{vm.targetDetail.EmployeeSize}}</div></td>
+   <td><input ng-if="vm.showEdit" ng-model="vm.targetDetail.Country"/><span ng-if="!vm.showEdit">{{vm.targetDetail.Country}} <span></td>
+   <td><input ng-if="vm.showEdit" ng-model="vm.targetDetail.City"/><span ng-if="!vm.showEdit">{{vm.targetDetail.City}} <span></td>
+   <td><input ng-if="vm.showEdit" ng-model="vm.targetDetail.EstablishedIn"/><span ng-if="!vm.showEdit">{{vm.targetDetail.EstablishedIn}} <span></td>
+   <td><input ng-if="vm.showEdit" ng-model="vm.targetDetail.Sector"/><span ng-if="!vm.showEdit">{{vm.targetDetail.Sector}} <span></td>

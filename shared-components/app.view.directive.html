@@ -1,0 +1,24 @@
+<div ng-class='vm.targetDetails.EmployeeSize<=50 ? "panel panel-warning" : "panel panel-primary"'>
+        <div class="panel-heading">
+                <h4>{{vm.targetDetails.TargetName}} - {{vm.targetDetails.Country}} - {{vm.targetDetails.EmployeeSize}} 
+                        <a herf="#" ng-click="vm.deleteItem(vm.targetDetails.ID)" ng-class='vm.targetDetails.EmployeeSize<=50 ? "pull-right fontcolorblue" : "pull-right fontcolorred"'>
+                                <i class="glyphicon glyphicon-remove"></i></a> &nbsp; &nbsp;
+                        <a herf="#" ng-click="vm.viewItem(vm.targetDetails)" ng-class='vm.targetDetails.EmployeeSize<=50 ? "pull-right fontcolorblue" : "pull-right fontcolorred"'>
+                                <i class="glyphicon glyphicon-search"></i></a>
+                </h4> 
+        </div>
+        <div class="panel-body">
+                <div class="row">
+                        <div class="col-sm-4"><strong> Sector :<strong></div> 
+                        <div class="col-sm-7">{{vm.targetDetails.Sector}}</div>
+                </div>
+                <div class="row">
+                        <div class="col-sm-4"><strong> Name :<strong></div>
+                        <div class="col-sm-7">{{vm.targetDetails.TargetName}}</div>
+                </div>
+                <div class="row">
+                        <div class="col-sm-4"><strong>Revenue :<strong></div>
+                        <div class="col-sm-7">{{vm.targetDetails.Revenue}} bn</div>
+                </div>
+        </div>
+</div>

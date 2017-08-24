@@ -1,0 +1,41 @@
+<div ng-controller="AddNewController as vm">
+<div class="row">
+  <div class="col-xs-6 col-md-6">
+      <div><b>{{ vm.Message }} - {{vm.TargetDetailsAll.length}}</b></div>
+    <form style="padding:20px;">
+     <div class="form-group">
+            <label for="targetName">Target Name</label>
+            <input type="text" name="targetName" id="targetName" class="form-control" ng-model="vm.targetName" required />
+        </div>
+        <div class="form-group" >
+            <label for="revenue">Revenue</label>
+            <input type="number" name="revenue" id="revenue" class="form-control" ng-model="vm.revenue" required />
+        </div>
+         <div class="form-group" >
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" ng-model="vm.email" required />
+        </div>
+         <div class="form-group" >
+            <label for="address">Address</label>
+            <input type="address" name="address" id="address" class="form-control" ng-model="vm.address" required />
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary" ng-click="vm.AddNewTarget()">Submit</button>
+    </div>
+  </form>
+  </div>
+  <div class="col-xs-6">
+<table class="table">
+  <thead class="thead-inverse">
+    <tr>
+     <th><b>#</b></th><th><b>TargetName</b></th><th><b>Revenue<b></th><th>Email</b></th><th><b>Address</b></th>
+    </tr>
+  </thead>
+  <tbody>
+   <tr ng-repeat="TargetDetail in vm.TargetDetailsAll | orderBy:'-ID'">
+            <td>{{TargetDetail.ID}} </td> <td>{{TargetDetail.TargetName}}</td> <td>{{TargetDetail.Revenue}}</td></td> <td>{{TargetDetail.Email}}</td> <td>{{TargetDetail.Address}}</td>
+  </tr>
+  </tbody>
+</table>
+</div>
+</div>

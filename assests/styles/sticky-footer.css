@@ -1,0 +1,52 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+#chart div {
+  display: inline-block;
+  background: #4285F4;
+  width: 20px;
+  margin-right: 3px;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis--x path {
+  display: none;
+}
+svg{
+ border: 1px solid #000000;
+}
+.fontcolorblue{
+color:blue !important;
+}
+.fontcolorred{
+color:red !important;
+}
+.fontcolorgreen{
+color:green !important;
+}
+.panel-footer.panel-custom {
+    background: black;
+    color: white;
+}

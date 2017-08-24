@@ -1,0 +1,24 @@
+<div ng-controller="DisplayController as vm">
+    <table class="table">
+      <thead class="thead-inverse">
+        <tr>
+        <th><b>Action</b></th>
+        <th><b>#</b></th>
+        <th><b>TargetName</b></th>
+        <th><b>Revenue<b></th>
+        <th>Email</b></th>
+        <th><b>Address</b></th>
+        <th><b>EmployeeSize</b></th>
+        <th><b>Country</b></th> 
+        <th><b>City</b></th> 
+        <th><b>EstablishedIn</b></th> 
+        <th><b>Sector</b></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="TargetDetail in vm.TargetDetailsAll" target-detail="TargetDetail" >
+        </tr>
+      </tbody>
+    </table>
+</div>
+
