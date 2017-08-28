@@ -19,11 +19,11 @@
         });
 
         vm.ShowDate =  dataService.getCurrentDate(true);
-        console.log(vm.ShowDate+ " vm.ShowDate");
+        //Console.log(vm.ShowDate+ " vm.ShowDate");
 
         dataService.getCurrentDateWithCallback(true, function(result){
             vm.ShowDateFromCallBack = result;
-            console.log(vm.ShowDateFromCallBack+ " vm.ShowDateFromCallBack");
+            //Console.log(vm.ShowDateFromCallBack+ " vm.ShowDateFromCallBack");
         });
 	 }
 })();
