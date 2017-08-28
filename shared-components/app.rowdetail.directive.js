@@ -29,7 +29,7 @@
         vm.showEdit = false;
 
         function deleteItem(ID) {
-            console.log("ID : "+ ID);
+            //Console.log("ID : "+ ID);
             var filters_to_remove = [], index = null;
 
             _.each(vm.targetDetailsAll, function(item, index) {

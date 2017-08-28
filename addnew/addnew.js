@@ -10,13 +10,13 @@
     ];
 
     function AddNewController($scope, $rootScope, $http) {
-        console.log('called this controller..');
+        //Console.log('called this controller..');
         var vm  = this;
         vm.Message = "Please fill enteries to add a new target. Existing Targets are ";
 		vm.TargetDetailsAll= [];
                 
         vm.AddNewTarget = AddNewTarget;
-        console.log(vm.Message);
+        //Console.log(vm.Message);
 		$http.get('targetdetails.json')
         .then(function(res){ 
 			if(res !=null){
