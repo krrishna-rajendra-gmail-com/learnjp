@@ -28,7 +28,6 @@
         vm.viewItem = viewItem;
 
         function deleteItem(ID){
-            console.log('in delete item', dataService)
             dataService.deleteItem(ID);
         }
 
