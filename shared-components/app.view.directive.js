@@ -8,7 +8,7 @@
     function viewBoxAuto() {
         var directive = {
             scope: {
-                targetDetails : "=",
+                targetDetails : "="
             },
             restrict: "E",
             controller: viewBoxAutoController,

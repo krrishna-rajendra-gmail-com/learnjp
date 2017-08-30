@@ -1,4 +1,5 @@
 <div ng-controller="DisplayController as vm">
+  <div>{{vm.TargetDetailsAll.length}}</div>
     <table class="table">
       <thead class="thead-inverse">
         <tr>
@@ -16,7 +17,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="TargetDetail in vm.TargetDetailsAll" target-detail="TargetDetail" >
+        <tr ng-repeat="TargetDetail in vm.TargetDetailsAll" target-detail="TargetDetail" delete-item="vm.deleteItems">
         </tr>
       </tbody>
     </table>

@@ -66,5 +66,10 @@
             callBack(date);
         }
 
+        function deleteCurrentItem(){
+
+            
+        }
+
     }
 })();
